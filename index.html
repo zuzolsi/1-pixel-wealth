@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <title>Wealth, shown to scale</title>
+  <title>Mierka bohatstva</title>
   <meta name="description" content="Inequality in the United States is out of control. Here we visualize the issue in a unique way." />
 
   <meta name="twitter:card" content="summary_large_image">
@@ -12,9 +12,9 @@
   <meta name="twitter:description" content="Inequality in the United States is out of control. Here we visualize the issue in a unique way.">
   <meta name="twitter:image" content="https://mkorostoff.github.io/1-pixel-wealth/img/off-the-chart.png">
 
-  <meta property="og:title" content="Wealth, shown to scale" />
+  <meta property="og:title" content="Mierka bohatstva" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="Wealth inequality in the United States is out of control. Here we visualize the issue in a unique way." />
+  <meta property="og:description" content="Nerovnosť bohatstva nielen v Spojených štátoch sa vymkla spod kontroly. Jedinečným spôsobom ti ukážeme, ako veľmi." />
   <meta property="og:image" content="https://mkorostoff.github.io/1-pixel-wealth/img/off-the-chart.png" />
 
   <link rel="stylesheet" type="text/css" href="main.css?version=1.10">
@@ -25,14 +25,35 @@
   <div class="wealth-wrapper-outer">
     <div class="wealth-row wealth-row-one">
       <div class="title-screen">
-        <h1>Wealth shown to scale</h1>
+        <h1>Mierka bohatstva</h1>
+        <div class="intro">
+          <p>Z pôvodného <a href="https://MKorostoff.github.io/1-pixel-wealth">Wealth Shown To Scale</a> preložila a
+            upravila Zuz</p>
+        </div>
+        <div class="introhidden" style="visibility: hidden">
+          <p>Možná by šlo vedle amerických reálií doplnit i naše a evropské - můžete se o to pokusit i sami a <a
+              href="https://www.github.com/kerray/1-pixel-bohatstvi">poslat pull request</a>,
+            stejně tak když najdete nějakou chybu.</p>
+
+          <p>Přibyla aktualizace částek, bohatí jsou po roce covid-19 krize zase o hodně bohatší, a přibyl
+            <a href="https://github.com/kerray/1-pixel-bohatstvi/blob/master/Argument_papírovým_miliardářem.md">argument
+              na nejčastější námitku "ale oni ty peníze nemají v hotovosti, ale jako akcie"</a>.
+          </p>
+
+          <p>Ať už Vás tento pohled provokuje nebo ve Vás rezonuje, pokud jste ochotní zvažovat i jiné, širší úhly
+            pohledu, než jaké jsou v našich médiích dnes běžné, mohl by Vás
+            zajímat subreddit <a href="https://cesky.reddit.com">/r/cesky</a>, případně rovnou <a
+              href="https://www.reddit.com/r/cesky/comments/gaupy1/nezm%C4%9Brn%C3%A9_bohatstv%C3%AD_takto_velkou_nerovnost_u%C5%BE/">vlákno
+              k této stránce</a>.</p>
+        </div>
+        
         <div class="scroll-this-way">
-          <span>scroll right</span>
-          <div id="instructions" class="instructions">To scroll right, use shift + mousewheel. If you have a touchpad, swipe sideways.</div>
+          <span>posúvaj sa doprava</span>
+          <div id="instructions" class="instructions">Posúvaj sa doprava podržaním Shift a posúvaním kolieska na myši. Ak máš touchpad, posúvaj sa na ňom do strán.</div>
         </div>
       </div>
       <div class="wealth-wrapper">
-        <h2 class="wealth-title">$1,000</h2>
+        <h2 class="wealth-title">Tisíc dolárov</h2>
         <div class="wealth one-thousand"></div>
         <div class="arrow">
           <svg viewBox="668 -8 14 70" width="14" height="70">
@@ -42,130 +63,130 @@
       </div>
 
       <div class="wealth-wrapper median">
-        <h2 class="wealth-title">$68,000 <span class="explainer">(Median US household income)</span></h2>
+        <h2 class="wealth-title">68,000 dolárov <span class="explainer">(Ročný mediánový príjem domácnosti v USA)</span></h2>
         <div class="wealth median-income"></div>
       </div>
 
       <div class="wealth-wrapper million">
-        <h2 class="wealth-title">$1 million</h2>
+        <h2 class="wealth-title">1 millión dolárov</h2>
         <div class="wealth"></div>
       </div>
 
       <div class="wealth-wrapper billion">
         <div class="wealth">
-          <h2 class="wealth-title">$1 billion</h2>
+          <h2 class="wealth-title">1 miliarda dolárov</h2>
         </div>
       </div>
 
       <div name="bezos" class="wealth-wrapper bezos">
         <div id="bezos" class="wealth ruler">
-          <h2 class="wealth-title">$185 billion (wealth of Jeff Bezos)</h2>
+          <h2 class="wealth-title">185 miliárd dolárov (toľko má Jeff Bezos)</h2>
           <div class="counter" id="bezos-counter"></div>
           <div class="key">
-            <span>$80 million</span>
+            <span>80 miliónov</span>
           </div>
 
           <div class="text-infobox infobox first">
-            <div class="title">Jeff is so wealthy, that it is quite literally unimaginable.</div>
+            <div class="title">Jeff je tak bohatý, že je to doslova nepredstaviteľné.</div>
           </div>
 
           <div class="text-infobox infobox">
-            <div class="title">We rarely see wealth inequality represented to scale. This is part of the reason Americans <a href="https://www.ncbi.nlm.nih.gov/pubmed/26162108" target="_blank">consistently under-estimate</a> the relative wealth of the super rich.</div>
+            <div class="title">Len zriedka vídame nerovnosť bohatstva zobrazenú graficky. To môže byť jedným z dôvodov, prečo si toľko Američanov a Američaniek <a href="https://www.ncbi.nlm.nih.gov/pubmed/26162108" target="_blank">neuvedomuje</a>, aký priepastný rozdiel je medzi nimi a tými superbohatými.</div>
           </div>
 
           <div class="five-pixels text-infobox infobox-half infobox">
-            <div class="title">Every 10 pixels you scroll is $5 million.</div>
+            <div class="title">Každých desať pixelov, o ktoré sa posunieš, predstavuje päť miliónov dolárov.</div>
           </div>
 
           <div class="coming-up text-infobox infobox">
-            <div class="title">OK, we're coming up on the end now.</div>
+            <div class="title">Dobre, už sme skoro na konci.</div>
           </div>
 
           <div class="text-infobox infobox">
             <div id="bezos-counter-start" class="title">
-              <p>Lol, just kidding, we're about a third of the way. Keep scrolling though, there's more to see.</p>
+              <p>Haha, robíme si srandu, sme asi tak v tretine. Len sa ďalej posúvaj, je tam toho viac.</p>
             </div>
           </div>
 
 
           <div class="text-infobox infobox infobox-half">
-            <div class="title">Let's put this wealth in perspective by comparing it to some familiar things.</div>
+            <div class="title">Skúsme si toto bohatstvo uviesť do perspektívy. Porovnajme ho s niekoľkými známymi vecami.</div>
           </div>
 
           <div class="infobox infobox-half lifetime">
             <div class="title-square-wrapper">
-              <div class="title">All the money you will ever earn in your entire life from the day you are born until the day you die (about $1.7 million)</div>
+              <div class="title">Všetky peniaze, ktoré priemerná Američanka alebo Američan zarobí za celý život odkedy sa narodí dokedy zomrie (asi 1,7 milióna dolárov).</div>
               <div class="square"></div>
             </div>
           </div>
 
           <div class="infobox infobox-half healthcare">
             <div class="title-square-wrapper">
-              <div class="title">Annual cost of health care for a family of four</div>
+              <div class="title">Ročná cena za zdravotnícke služby priemernej rodiny v Amerike.</div>
               <div class="square"></div>
             </div>
           </div>
 
           <div class="infobox infobox-half amazon-year">
             <div class="title-square-wrapper">
-              <div class="title">Annual pay of an Amazon warehouse worker.</div>
+              <div class="title">Ročný plat skladníka v Amazone (ktorého riaditeľom je Jeff Bezos).</div>
               <div class="square"></div>
             </div>
           </div>
 
           <div class="infobox infobox-half year-veteran">
             <div class="square shadow">
-              <div class="title">Annual cost to house every homeless veteran.</div>
+              <div class="title">Toľkoto by stálo na rok ubytovať každého amerického vojnového veterána.</div>
             </div>
           </div>
 
           <div class="infobox infobox-half year-chemo">
             <div class="square shadow">
-              <div class="title">Annual cost of chemotherapy for all cancer patients ($9 billion)</div>
+              <div class="title">Toľkoto by stálo poskytnúť chemoterapiu všetkým ľuďom v USA s rakovinou (9 miliárd).</div>
               <div class="midtext-wrapper">
-                <div class="midtext">On July 20th 2020 Jeff Bezos made <a href="https://www.cnbc.com/2020/07/21/bezos-record-multibillion-dollar-net-worth-gain-bloomberg.html" target="_blank">$13 billion</a> in a single day.</div>
+                <div class="midtext">20. júla 2020 zarobil Jeff Bezos <a href="https://www.cnbc.com/2020/07/21/bezos-record-multibillion-dollar-net-worth-gain-bloomberg.html" target="_blank">13 miliárd dolárov </a> za jediný deň.</div>
               </div>
             </div>
           </div>
 
           <div class="infobox infobox-half text-infobox">
             <div class="title">
-              <p>Even the fortunes of very rich people are dwarfed by the incomprehensible wealth of the 0.0001%.</p>
+              <p>Ešte aj bohatstvo veľmi bohatých ľudí bledne v poronaní s neporovnateľným bohatstvom ľudí, ktorí sa nachádzajú na úplnom vrchu (0,0001 %).</p>
             </div>
           </div>
 
           <div class="infobox infobox-quarter celebrities">
             <div class="column-infobox">
               <div class="sub-infobox goldman">
-                <div class="title">Wealth of Goldman Sachs CEO David Solomon ($50 million)</div>
+                <div class="title">Majetok riaditeľa investičnej banky Goldman Sachs Davida Solomona (50 miliónov dolárov).</div>
                 <div class="square shadow"></div>
               </div>
 
             </div>
             <div class="sub-infobox beyonce">
-              <div class="title">Wealth of Beyonc&eacute; ($400 million)</div>
+              <div class="title">Majetok Beyoncé (400 miliónov).</div>
               <div class="square shadow"></div>
             </div>
 
             <div class="sub-infobox tim-cook">
-              <div class="title">Wealth of Apple CEO Tim Cook ($625 million)</div>
+              <div class="title">Majetok riaditeľa Apple Tima Cooka (625 miliónov).</div>
               <div class="square shadow"></div>
             </div>
 
             <div class="column-infobox">
               <div class="sub-infobox doctor small">
-                <div class="title">Lifetime earnings of a doctor, on average ($6.7 million)</div>
+                <div class="title">Toľkoto priemerne zarobí za svoj život lekárka v USA (6,7 milióna dolárov).</div>
                 <div class="square shadow"></div>
               </div>
 
               <div class="sub-infobox lawyer small">
-                <div class="title">Lifetime earnings of a lawyer, on average ($4 million)</div>
+                <div class="title">Toľkoto priemerne zarobí za celý svoj život právnička v USA (4 milióny).</div>
                 <div class="square shadow"></div>
               </div>
             </div>
 
             <div class="sub-infobox hedgefund">
-              <div class="title">Lifetime earnings of a hedge fund manager, on average ($84 million)</div>
+              <div class="title">Toľkoto priemerne zarobí za celý svoj život manažér hedge fundu (neregulovaného investičného fondu) (84 miliónov).</div>
               <div class="square shadow"></div>
             </div>
 
@@ -173,13 +194,13 @@
 
           <div class="infobox infobox-close text-infobox">
             <div class="title">
-              <p>These people may see themselves as fabulously rich, and often oppose policies aimed at reducing inequality.</p>
+              <p>Títo ľudia sami seba vnímajú ako úžasne bohatých a často protestujú proti opatreniam zameraným na znižovanie nerovnosti.</p>
             </div>
           </div>
 
           <div class="infobox infobox-close text-infobox">
             <div class="title">
-              <p>But many have not fully grasped the enormous gulf between themselves and the super rich.</p>
+              <p>Ale mnohí a mnohé z nich vôbec nepochopili, aký priepastný rozdiel existuje medzi nimi a tými najbohatšími.</p>
             </div>
           </div>
 
@@ -213,7 +234,7 @@
                           <text transform="translate(668 353.7383)" fill="black">
                             <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x="45.36719" y="14">Mark </tspan>
                             <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x="0" y="31.523438">Zuckerberg </tspan>
-                            <tspan font-family="Arial" font-size="12" font-weight="400" fill="black" x="13.105469" y="46.046875">($116 billion)</tspan>
+                            <tspan font-family="Arial" font-size="12" font-weight="400" fill="black" x="13.105469" y="46.046875">(116 miliárd)</tspan>
                           </text>
                         </g>
                         <g id="Graphic_5">
@@ -223,7 +244,7 @@
                         </g>
                         <g id="Graphic_9">
                           <text transform="translate(155 281.5)" fill="black">
-                            <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x="0" y="14">$200 million</tspan>
+                            <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x="0" y="14">200 miliónov</tspan>
                           </text>
                         </g>
                         <g id="Line_10">
@@ -240,21 +261,21 @@
                   </svg>
                 </div>
                 <div id="ok-zoomer">
-                  <a class="zoom-in" onclick="toggleZoom()" href="javascript:;">Zoom In</a>
-                  <a class="zoom-out" onclick="toggleZoom()" href="javascript:;">Zoom Out</a>
+                  <a class="zoom-in" onclick="toggleZoom()" href="javascript:;">Priblíž si</a>
+                  <a class="zoom-out" onclick="toggleZoom()" href="javascript:;">Oddiaľ si</a>
                 </div>
               </div>
             </div>
 
             <div class="infobox infobox-close text-infobox">
               <div class="title">
-                <p>We can have a world in which wealthy people exist, without handing <a href="https://www.usatoday.com/story/money/2018/01/22/vast-majority-new-wealth-last-year-went-top-1/1051947001/" target="_blank">nearly all money</a>  to the super rich.
+                <p>Môžeme žiť vo svete, kde ešte stále existujú bohatí ľudia bez toho, aby sme odovzdávali <a href="https://www.usatoday.com/story/money/2018/01/22/vast-majority-new-wealth-last-year-went-top-1/1051947001/" target="_blank">takmer všetky peniaze</a>  tých superbohatým.
                 </div>
               </div>
 
         <div class="infobox infobox text-infobox no-single-human">
           <div class="title">
-            <p>No single human needs or deserves this much wealth.</p>
+            <p>Žiadna ľudská bytosť nepotrebuje a ani si nezaslúži toľkoto bohatstva.</p>
           </div>
         </div>
 
@@ -263,61 +284,61 @@
 
     <div id="four-hundred" class="wealth-wrapper four-hundred">
       <div class="wealth ruler">
-        <h2 class="wealth-title">400 richest Americans ($3.2 trillion)</h2>
+        <h2 class="wealth-title">400 najbohatších ľudí v USA (3,2 biliónov dolárov)</h2>
         <div class="counter" id="four-hundred-counter"></div>
         <div class="key">
-          <span>$80 million</span>
+          <span>80 miliónov</span>
         </div>
 
         <div class="infobox infobox text-infobox intro">
           <div class="title">
-            Jeff Bezos may be insanely rich, but it is a drop in the ocean compared to the combined wealth of his peers. The 400 richest Americans own about $3.2 trillion, which is more than the bottom 60% of Americans.
+            Jeff Bezos je možno nepredstaviteľne bohatý, ale aj jeho majetok je kvapkou v mori v porovnaní s celkovým bohatstvom jemu podobným. Najbohatších štyristo ľudí v USA dokopy vlastní 3,2 bilióna, čo je viac ako bohatstvo "dolných" 60 % ľudí v USA.
           </div>
         </div>
 
         <div id="four-hundred-counter-start" class="people-wrapper-outer four-hundred-people infobox infobox-close">
           <div class="people-wrapper center-sticky">
             <div class="people">
-              <div class="people-label bubble">400 people</div>
+              <div class="people-label bubble">400 ľudí</div>
             </div>
           </div>
         </div>
 
         <div class="people-wrapper-outer sixty-percent-people infobox infobox-close">
           <div id="sixty-percent" class="people-wrapper center-sticky">
-            <div class="people-label bubble">Bottom 60% <div class="people-sub-label">(Scroll Down)</div></div>
-            <div id="sixty-percent-indicator" class="percent">0.0%</div>
+            <div class="people-label bubble">"Dolných" 60 % <div class="people-sub-label">(Posúvaj dole)</div></div>
+            <div id="sixty-percent-indicator" class="percent">0.0 %</div>
           </div>
         </div>
 
         <div class="infobox infobox text-infobox intro">
           <div class="title">
-            <p>A trillion dollars is such a large figure, that you might as well say "eleventy gajillion zillion dollars."  So in this section, we will try to understand the scale of this figure by looking at what could be accomplished with various chunks of this wealth.</p>
+            <p>Bilión dolárov je tak obrovská čiastka že môžeme pokojne povedať aj "iks sextiliónov kvintiliónov dolárov". V tejto časti si teda skúsime predstaviť, koľko to naozaj je, tým, že si ukážeme, čo by sa dalo s rôznymi čiastkami tejto sumy dokázať.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            Some will argue that using this wealth for public benefit is not possible, because it's "tied up" in stocks, and therefore inaccessible. <a href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/THE_PAPER_BILLIONAIRE.md" target="_blank">This is just not true</a>.
+            Sú ľudia, ktorí ti povedia, že využiť tento majetok pre verejné blaho je nemožné, lebo je "uviaznuté" v akciách, a teda k nemu nemáme prístup. <a href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/THE_PAPER_BILLIONAIRE.md" target="_blank">Toto proste nie je pravda</a>.
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>As we proceed, try to keep in mind: all of this wealth is controlled by a group so small, that they could fit on a single 747 airplane&#8212;with 260 seats left over.</p>
+            <p>Ako pôjdeme ďalej, skús si pamätať: všetko toto bohatstvo je pod kontrolou tak malej skupiny, že by sa celá vošla do jedného Boeingu 747 - a 260 sedadiel by ešte zostalo prázdnych.</p>
           </div>
         </div>
 
         <div class="plane-wrapper-outer infobox infobox-close">
           <div class="plane-wrapper center-sticky">
             <div class="plane">
-              <img src="img/plane.png" />
+              <img src="img/lietadlo2.png" />
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-half">
-          <h2 class="title what-could-we-do">What could we do with under 10% of this money?</h2>
+          <h2 class="title what-could-we-do">Čo by sme mohli urobiť s menej ako desiatimi percentami tejto sumy?</h2>
         </div>
 
         <div class="infobox infobox-quarter flex">
@@ -328,26 +349,26 @@
             <span class="label">6%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Vaccinate every human on earth against coronavirus</h2>
+              <h2>Zaočkovať každého človeka na svete proti koronavírusu</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Based on the <a href="https://www.washingtonpost.com/world/eu-coronavirus-vaccines-cheaper-than-united-states/2020/12/18/06677e34-4139-11eb-b58b-1623f6267960_story.html">cost of vaccines</a> and the <a href="https://www.who.int/docs/default-source/coronaviruse/act-accelerator/covax/costs-of-covid-19-vaccine-delivery-in-92amc_08.02.21.pdf" target="_blank">cost of delivery</a>, it would take around <a href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/docs/COST_OF_VACCINATION.md" target="_blank">$200 billion</a> to vaccinate every person on earth, which is about 6% of the wealth currently controlled by 400 Americans. After paying for this vaccination program, these individuals would still be $40 billion richer than they were before the pandemic.</p>
+            <p>Na základe údajov o <a href="https://www.washingtonpost.com/world/eu-coronavirus-vaccines-cheaper-than-united-states/2020/12/18/06677e34-4139-11eb-b58b-1623f6267960_story.html">nákladoch na vakcíny</a> a <a href="https://www.who.int/docs/default-source/coronaviruse/act-accelerator/covax/costs-of-covid-19-vaccine-delivery-in-92amc_08.02.21.pdf" target="_blank">nákladoch na zaočkovanie</a> by stálo asi <a href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/docs/COST_OF_VACCINATION.md" target="_blank">200 miliárd dolárov</a> zaočkovať každého človeka na Zemi, čo sa rovná asi len 6 % majetku, ktorý momentálne vlastní 400 Američanov. Aj keby zaplatili celý tento očkovací program, boli by stále o 40 miliárd dolárov bohatší, ako boli pred pandémiou.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Even setting aside the desperate humanitarian need for a global vaccination, there is still a strong self-interested argument that wealthy countries should do it: the longer covid circulates in the world, the more chance of a <a href="https://www.newscientist.com/article/mg24933201-800-vaccine-nationalism-will-leave-everyone-more-at-risk-of-coronavirus/" target="_blank">vaccine resistant variant</a> emerging, and undoing all the vaccine progress we've already made.</p>
+            <p>Ešte aj v prípade, že neberieme do úvahy nesmierne naliehavú humanitárnu potrebu celosvetového zaočkovania proti COVID-19, pre bohaté krajiny je to aj vec sebeckého záujmu: čím dlhšie cirkuluje covid po svete, tým väčšia je prevdepodobnosť vzniku <a href="https://www.newscientist.com/article/mg24933201-800-vaccine-nationalism-will-leave-everyone-more-at-risk-of-coronavirus/" target="_blank">variantu odolnému vakcíne</a> a teda aj zničenia pokroku, ktorý sme v boji proti koronavírusu urobili.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>The World Health Organization is currently organizing a global vaccine donation program which aims to vaccinate <a href="https://www.who.int/initiatives/act-accelerator/covax" target="_blank">about 20%</a> of residents in poor countries by the end of 2021, and even that approach has <a href="https://www.washingtonpost.com/world/2021/04/01/covax-healthcare-workers-funding/" target="_blank">substantial funding shortfalls</a>.</p>
+            <p>Svetová zdravotnícka organizácia (WHO) práve (v roku 2020) organizuje celosvetový program darovania vakcín, ktorým chcú do konca roka 2021 zaočkovať <a href="https://www.who.int/initiatives/act-accelerator/covax" target="_blank">asi 20 %</a> obyvateľstva v chudobných krajinách, a ešte aj táto iniciatíva je v <a href="https://www.washingtonpost.com/world/2021/04/01/covax-healthcare-workers-funding/" target="_blank">ťažkých finančných ťažkostiach</a>.</p>
           </div>
         </div>
 
@@ -359,14 +380,14 @@
             <span class="label">3%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Permanently eradicate malaria</h2>
+              <h2>Natrvalo eradikovať (zničiť) maláriu</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Malaria is one of the worst infectious diseases ever visited on mankind, possibly killing more people than any other infectious disease in history. In the 20th century alone, malaria killed more people than the Black Death.</p>
+            <p>Malária je jedna z najhorších chorôb, aká kedy ľudstvo postretla. Má sa za to, že pravdepodobne zabila viac ľudí v histórii ľudstva než ktorákoľvek iná choroba. Iba v 20. storočí zabila malária viac ľudí ako čierna smrť (mor).</p>
           </div>
         </div>
 
@@ -374,10 +395,10 @@
           <div class="infectious">
             <div class="malaria-bar">
               <div class="square shadow">
-                <div class="title">Annual Malaria deaths<br> (409,000)</div>
+                <div class="title">Ročné úmrtia na maláriu<br> (409 000)</div>
               </div>
             </div>
-            <div class="ebola-bar"><div class="title">Ebola deaths in <strong>all of human history</strong> combined (about 15,000)</div>
+            <div class="ebola-bar"><div class="title">Úmrtia na ebolu za <strong>celú ľudskú históriu</strong> (asi 15 000)</div>
               <div class="square shadow"></div>
             </div>
           </div>
@@ -385,14 +406,14 @@
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            These figures are even more shocking when you learn that malaria overwhelmingly kills children; around two-thirds of malaria deaths each year are children under five. That's around 275,000 children.
+            Tieto čísla sú ešte šokujúcejšie, keď si uvedomíme, že malária v drvivej väčšine zabíja deti; asi dve tretiny úmrtí na maláriu každý rok tvoria deti mladšie ako päť rokov. To je každý rok asi 275 000 detí.
           </div>
         </div>
 
         <div class="infobox infobox-close malaria flex">
           <div id="babies-wrapper" class="babies-wrapper center-sticky">
             <div id="babies" class="babies">
-              <div class="scroll-indicator bubble">Children under five killed by malaria each year <div class="people-sub-label">(Scroll Down)</div></div>
+              <div class="scroll-indicator bubble">Deti mladšie ako päť rokov, ktoré každý rok zomrú na maláriu<div class="people-sub-label">(Posúvaj dole)</div></div>
               <span id="baby-counter" class="baby-counter bubble">10</span>
             </div>
           </div>
@@ -400,14 +421,14 @@
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p><em>All</em> of these deaths are preventable. Treating and preventing malaria is a well understood science, universally practiced in the developed world.</p>
-            <p><a href="https://www.ncbi.nlm.nih.gov/pubmed/25551454" target="_blank">It is estimated</a> that malaria could be globally eradicated by 2030 for a cost around $1.84 per at-risk person per year, or around $100 billion total. This would be around 3% of the wealth currently possessed by the 400 richest Americans.</p>
+            <p><em>Všetkým</em> týmto úmrtiam sa dá predísť. Veda okolo prevencie a liečby malárie je veľmi dobre uchopená a jasná a v rozvinutých krajinách sa univerzálne využíva.</p>
+            <p><a href="https://www.ncbi.nlm.nih.gov/pubmed/25551454" target="_blank">Odhaduje sa,</a> že malária by sa dala celosvetovo eradikovať do roku 2030 a stálo by to asi 1,84 dolára na ohrozenú osobu na rok, alebo dokopy asi 100 miliárd dolárov. To sú asi tri percentá bohatstva, ktoré momentálne vlastní 400 najbohatších Američanov a Američaniek.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Around 800 children will die of malaria today. A small group of super rich people could stop it for a sum of money so small that they would likely never even notice its absence. But they choose not to.</p>
+            <p>Približne 800 detí dnes zomrie na maláriu. Skupinka superbohatých ľudí by to mohla zastaviť za tak málo peňazí, že by si to asi ani nevšimli. Ale oni sa rozhodli, že to neurobia.</p>
           </div>
         </div>
 
@@ -419,21 +440,21 @@
             <span class="label">2.5%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Wipe out all the delinquent medical debt in America</h2>
+              <h2>Vymazať všetky nezaplatené dlhy na zdravotnej starostlivosti v Spojených štátoch</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Americans have about <a href="https://www.pbs.org/newshour/health/millennials-rack-up-the-most-medical-debt-and-more-frequently" target="_blank">$81 billion</a> in medical debt that is sufficiently past due as to appear on their credit report. These are generally small debts, with a median value of <a href="https://files.consumerfinance.gov/f/201412_cfpb_reports_consumer-credit-medical-and-non-medical-collections.pdf" target="_blank">$207 dollars</a> per person.</p>
-            <p> These debts hinder the credit of over 50 million Americans, and do long term damage to their housing, employment, and borrowing options. The cost of repaying this debt dollar-for-dollar would be around 2.5% of the wealth controlled by 400 Americans.</p>
+            <p>Američania a Američanky majú asi<a href="https://www.pbs.org/newshour/health/millennials-rack-up-the-most-medical-debt-and-more-frequently" target="_blank">81 miliárd dolárov</a> dlh na zdravotnej starostlivosti, ktorý nedokážu splatiť tak dlho, že sa odráža na hodnote ich kreditu (to je ukazovateľ finančnej spôsobilosti, ktorý ovplyvňuje, či niekomu schvália hypotéku na byt, predajú auto alebo dokonca dajú prácu). Vo všeobecnosti ide o malé sumy, ich stredná (mediánová) hodnota je asi <a href="https://files.consumerfinance.gov/f/201412_cfpb_reports_consumer-credit-medical-and-non-medical-collections.pdf" target="_blank">207 dolárov</a> na osobu.</p>
+            <p> Tieto dlhy negatívne ovplyvňujú kredit viac než 50 miliónov Američanov a Američaniek a teda aj ich možnosti bývania, zamestnania a pôžičiek. Cena proporčného vyplatenia tohto dlhu by sa rovnala asi 2,5 % všetkého bohatstva kontrolovaného 400 najbohatšími Američanmi a Američankami.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            This situation looks even better once you understand that delinquent debt is often purchased for as <a href="https://www.ksl.com/article/46455844/charity-buys-and-erases-past-due-medical-debt" target="_blank">little as 1%</a> of its face value. This would make the total cost of eliminating all delinquent medical debt around $810 million. In 2020, the richest 400 Americans accrued this amount roughly every 29 hours.
+            Táto situácia vyzerá ešte sľubnejšie, keď si pripomenieme, že riadne nesplatené dlhy sa skupujú niekedy <a href="https://www.ksl.com/article/46455844/charity-buys-and-erases-past-due-medical-debt" target="_blank">len za 1 %</a> svojej nominálnej hodnoty. Za týchto podmienok by sa dlh na zdravotnej starostlivosti po splatnosti rovnal 810 miliónom dolárov. V roku 2020 takúto sumu 400 najbohatších Američanov a Američaniek získalo každých asi 29 hodín.
           </div>
         </div>
 
@@ -445,7 +466,7 @@
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            Note that this figure includes only <em>delinquent</em> medical debt, not all medical debt. The value of all medical debt in America is not publicly known, but probably in the neighborhood of <a href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/docs/VALUE_OF_MEDICAL_DEBT.md" target="_blank">$300 billion</a>, or 9% of the wealth controlled by 400 Americans.
+            Nezabudni, že toto číslo zahŕňa len dlh <em>po splatnosti</em>, nie všetok dlh. Hodnota úplne všetkých dlhov na zdravotnej starostlivosti v Spojených štátoch nie je verejne známa, ale môže byť okolo <a href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/docs/VALUE_OF_MEDICAL_DEBT.md" target="_blank">300 miliárd dolárov</a>, alebo 9 % všetkého bohatstva kontrolovaného 400 najbohatšími ľudmi v USA.
           </div>
         </div>
 
@@ -457,47 +478,47 @@
             <span class="label">5.3%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Lift every American out of poverty.</h2>
+              <h2>Vymaniť každého človeka v USA z chudoby</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            As of 2021, around 38 million Americans lived in poverty. If Americans in poverty were a state, they would be second largest by population. There are more Americans living in poverty than the entire population of Canada.
+            Podľa údajov z roku 2021 žilo asi 38 miliónov Američanov a Američaniek v chudobe. Ak by boli chudobní ľudia v USA jeden z amerických štátov, tvorili by druhý najľudnatejší štát. V chudobe žije viac Američanov a Američaniek, ako je všetkých ľudí v Kanade.
           </div>
         </div>
 
         <div class="infobox infobox-close">
           <div class="chart">
-            <h3>Population of US States compared to poverty, 2021</h3>
+            <h3>Populácia amerických štátov v porovnaní s chudobou, 2021</h3>
             <img src="img/poverty.svg">
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p><a href="https://www.census.gov/content/dam/Census/library/publications/2019/demo/p60-266.pdf" target="_blank">Every single person</a> in America could be lifted above the poverty line with a one-time cash subsidy of around $10,000 per impoverished family (and about $7,000 for impoverished individuals). The total cost would be $170 billion, a little over 5% of the wealth currently controlled by 400 individuals.</p>
+            <p><a href="https://www.census.gov/content/dam/Census/library/publications/2019/demo/p60-266.pdf" target="_blank">Každý jeden človek</a> žijúci v Spojených štátoch by mohol byť pozdvihnutý nad hranicu chudoby jednou finančnou dávkou v hodnote asi 10 000 dolárov pre chudobnú rodinu (a asi 7 000 dolárov pre chudobného jednotlivca). Celková suma by bola 170 miliárd, čiže niečo nad 5 % bohatstva, ktoré kontroluje 400 najbohatších ľudí v USA.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>It may seem counter intuitive that a one-time subsidy could have any lasting impact on chronic poverty. But one of the surprising truths about poverty is that it's fluid. Americans move in and out of poverty many times throughout their lives, and one good year can have a massive and long lasting effect.</p>
+            <p>Môže sa zdať, zvláštne, že by jednorazová dávka mohla mať dlhotrvajúci efekt na chronickú chudobu. Ale prekvapivé na chudobe je to, že je premenlivá. Ľudia sa počas svojich životov mnohokrát pohybujú medzi chudobou a lepšou situáciou. Jeden dobrý rok môže mať obrovský a dlhotrvajúci dopad.</p>
 
-              <p>A wealth of data now supports the idea that <a href="https://www.givedirectly.org/research-on-cash-transfers/" target="_blank">one-time cash transfers can permanently transform a local economy.</a> Given a sudden windfall, people invest in their future. They go back to school, obtain transportation, pay for childcare, pay down debilitating debts, and do any number of things to improve their career prospects and financial future.</p>
+              <p>Množstvo dát už dnes podporuje hypotézu, že<a href="https://www.givedirectly.org/research-on-cash-transfers/" target="_blank">jednorazové finančné injekcie môžu trvalo premeniť lokálne ekonomiky.</a> Keď majú ľudia zrazu k dispozícii rezervu, začnú investovať do vlastnej budúcnosti. Vrátia sa do školy, zaobstarajú si prostriedok na dopravu, zaplatia starostlivosť o deti, splatia ničivé dlhy a spravia množstvo vecí, ktoré zlepšia ich vyhliadky na zamestnanie a finančné plánovanie.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>In the US, for all of the people that escape poverty in any given year, <a href="https://poverty.ucdavis.edu/sites/main/files/file-attachments/stevens_1994aerpp.pdf" target="_blank">about half stay out of poverty for at least five years afterwards</a>. About a third are still out of poverty ten years later.</p>
+            <p>Dáta v USA ukazujú, že asi polovica ľudí, ktorí sa v daný rok dostanú z chudoby, <a href="https://poverty.ucdavis.edu/sites/main/files/file-attachments/stevens_1994aerpp.pdf" target="_blank">vydrží nad jej hranicou aspoň päť rokov.</a>. Asi tretina sa nad ňou drží aj po desiatich rokoch</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>This would not be a permanent fix for all Americans. Surely, some would quickly return to poverty, and others face debts so large that the subsidy would make little difference. But for tens of millions of Americans, this would be a life changing event. It would be a generation defining social program that reshapes our economy for decades to come.</p>
+            <p>Takéto opatrenie by nebolo trvalým riešením pre všetkých Američanov a Američanky. Samozrejme, mnohí a mnohé by sa rýchlo prepadli naspäť do chudoby, a mnoho z nich čelí tak veľkým dlhom, že by pre nich takáto dávka nespravila veľký rozdiel. Ale pre milióny a milióny z nich by to bolo niečo, čo úplne zmení ich život. Bol by to nezabudniteľný sociálny program, ktorý by zmenil americkú ekonomiku na delé desaťročia dopredu.</p>
           </div>
        </div>
 
@@ -509,38 +530,38 @@
             <span class="label">7.5%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Provide clean drinking water and toilet access to every human on earth.</h2>
+              <h2>Umožniť prístup k pitnej vode a toalete všetkým ľuďom na Zemi.</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Around <a href="https://www.who.int/news-room/detail/12-07-2017-2-1-billion-people-lack-safe-drinking-water-at-home-more-than-twice-as-many-lack-safe-sanitation" target="_blank">844 million people</a> have no access to clean water of any kind. About the same number have no access to a toilet or latrine of any kind, and therefore defecate in the open.</p>
+            <p>Asi <a href="https://www.who.int/news-room/detail/12-07-2017-2-1-billion-people-lack-safe-drinking-water-at-home-more-than-twice-as-many-lack-safe-sanitation" target="_blank">844 miliónov ľudí</a> nemajú prístup k žiadnej čistej vode. Asi tak isto veľa ľudí nemá prístup k toalete alebo latríne, a teda musia vykonávať potrebu na otvorenom priestranstve.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="worldchart">
             <img src="img/no_clean_water.png"/>
-            <h2 class="description">No clean water</h2>
+            <h2 class="description">Bez čistej vody</h2>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Contaminated water is a major source of disease, including cholera, dysentery, and typhoid. <a href="https://www.who.int/news-room/fact-sheets/detail/drinking-water">It is estimated</a> that contaminated water kills about 829,000 people every year, making it one of the world's biggest killers. The cost to provide clean water and waste disposal for everyone on earth would be about <a href="https://web.archive.org/web/20220221195720/https://www.who.int/water_sanitation_health/watandmacr3.pdf" target="_blank">$240 billion</a>, or 7.5% of the wealth controlled by the 400 richest Americans.</p>
+            <p>Kontaminovaná voda je hlavným zdrojom ochorení ako cholera, dyzentéria (úplavica) a týfus. <a href="https://www.who.int/news-room/fact-sheets/detail/drinking-water">Odhaduje sa,</a> že kontaminovaná voda zabije ročne asi 829 000 ľudí, čo z nej robí jedného z najvačších zabijakov na svete. Náklady na zabezpečenie čistej vody a nejakej formy toalety by boli asi <a href="https://web.archive.org/web/20220221195720/https://www.who.int/water_sanitation_health/watandmacr3.pdf" target="_blank">240 miliárd dolárov</a>, teda 7,5 % bohatstva, ktoré kontroluje 400 najbohatších ľudí v USA.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            OK, now that we've established the scale of inequality in the United States, let's dare to dream a little bigger.
+            Dobre, keďže sme ilustrovali mieru nerovnosti v USA, skúsme snívať vo väčšom.
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
-          <h2 class="title what-could-we-do">What could we do with under 40% of this money?</h2>
+          <h2 class="title what-could-we-do">Ćo by sme mohli spraviť so 40 % týchto peňazí?</h2>
         </div>
 
 
@@ -552,21 +573,21 @@
             <span class="label">39.6%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Provide paid maternity and paternity leave to every American for the next 100 years</h2>
+              <h2>Poskytnúť platenú rodičovskú dovolenku každému Američanovi a Američanke na ďalších 100 rokov</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>Paid maternity and paternity leave are estimated to cost around <a href="https://www.americanactionforum.org/insight/the-fiscal-cost-of-a-paid-parental-leave-program-by-state/" target="_blank">$12 billion</a> per year. This is 0.39% of the wealth controlled by 400 Americans. It is 5% of the wealth they accrued in 2020 alone.</p>
-            <p>If they repeated this payment every year for the next 100 years, it would equal 39% of the wealth they control today.</p>
+            <p>Náklady na platenú materskú a otcovskú dovolenku sa odhadujú na <a href="https://www.americanactionforum.org/insight/the-fiscal-cost-of-a-paid-parental-leave-program-by-state/" target="_blank">12 miliárd dolárov</a> ročne. To je 0,39 % bohatstva kontrolovaného 400 Američanmi a Američankami. Je to 5 % bohatstva, ktoré zarobili len v roku 2020.</p>
+            <p>Ak by takúto platbu opakovali každý rok po dobu sto rokov, rovnalo by sa to 39 % bohatstva, ktoré vlastnia dnes.</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>This is a more complex program to estimate than the others considered on this page, because the expense would be continuous, rather than one-time, and the cost is highly variable based on the size of the benefit provided. Still, using the <a href="https://web.archive.org/web/20210809092211/https://www.manning-napier.com/insights/blogs/insights-for-non-profits/endowments-and-foundations-a-closer-look-at-spending-rules" target="_blank">5% endowment payout rule</a> the super wealthy should be able to finance a family leave program about 12 times more generous than the one contemplated here <u>forever</u> and still get richer into perpetuity, even accounting for inflation.</p>
+            <p>Tento program je komplexnejší ako iné, ktoré sme na tejto stránke rozoberali, pretože platby by boli hradené priebežne a nie jednorazovo, a náklady na takéto opatrenie sa výrazne líši v súvislosti na výške dávky, ktorá by bola vyplácaná. Ale aj napriek tomu, ak sa pridržíme <a href="https://web.archive.org/web/20210809092211/https://www.manning-napier.com/insights/blogs/insights-for-non-profits/endowments-and-foundations-a-closer-look-at-spending-rules" target="_blank">pravidla päťpercentného vyplácania (5% endowment payout rule),</a> superbohatí by mali byť schopní financovať program rodičovskej dovolenky, ktorý je dvanásťkrát štedrejší ako ten, ktorý tu prezentujeme <u>navždy</u> a stále nekonečne bohatnúť, a to aj s prihliadnutím na infláciu.</p>
           </div>
         </div>
 
@@ -578,25 +599,25 @@
             <span class="label">40%</span>
             <div class="dotted-line"></div>
             <div class="description">
-              <h2>Give $10,000 to every American household</h2>
+              <h2>Dať 10 000 dolárov každej americkej domácnosti</h2>
             </div>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            There are about 128 million households in the United States. To give each one $10,000 would cost $1.28 trillion, or about 40% of the wealth controlled by 400 Americans.
+            V USA je asi 128 miliónov domácností. Dať každej 10 000 dolárov by stálo 1,28 bilióna dolárov, čo je asi 40 % bohatstva kontrolovaného 400 najbohatšími ľuďmi v USA.
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            <p>As the coronavirus raged through America in 2020, working people were frequently presented with a seemingly impossible choice between death by premature reopening and an economic depression brought about through a continued quarantine. Unspoken in this false choice was the supposition that Americans could not pay their living expenses without either work or unsustainable government deficit spending&mdash;where else could the money have possibly come from?</p>
+            <p>Pracujúci boli počas besnenia koronavírusu v roku 2020 často vystavení strašnej voľbe medzi smrťou kvôli príliš skorému otvoreniu a ekonomickou krízou spôsobenou karanténou. Čo zostalo nevypovedané, ale úplne samozrejmé, bola domnienka, že Američania a Američanky nemohli pokryť svoje životné náklady inak ako prácou alebo neudržateľnými vládnymi výdavkami, ktoré viedli k deficitu&mdash;odkiaľ inak by asi tie peniaze mohli pochádzať?</p>
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
-          <h2 class="title what-could-we-do">What could we do with 60% of this money?</h2>
+          <h2 class="title what-could-we-do">Čo by sme mohli urobiť so 60 % týchto peňazí?</h2>
         </div>
 
         <div class="ninety-wrapper-outer infobox infobox-close">
@@ -609,32 +630,32 @@
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            These programs combined would completely transform our world. By redistributing this wealth, millions of lives would be saved. Billions would be rescued from poverty and disease. By inconveniencing <em>just 400 people</em>, the entire human race could advance to a new, unprecedented level of development.
+            Tieto programy by úplne zmenili náš svet. Prerozdelením tohto bohatstva by sme zachránili milióny životov. Miliardám by sme mohli ponúknuť život bez chudoby a chorôb. Tým, že by sme unúvali <em>len 400 ľudí</em>, by sme mohli ako ľudstvo pokročiť k novým, dosiaľ nedosiahnutým úrovniam rozvoja.
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close all-of-them">
           <div class="title">
-            And <em>all</em> of them would still be billionaires afterwards.
+            A <em>všetci</em> z nich by boli aj po tom stále milionármi.
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-close">
           <div class="title">
-            Is it really so radical to suggest that this is the right thing to do? Given the choice between millions of deaths, and slightly shrinking the fortunes of a few super rich people, how could anyone conclude that the death of millions is preferable?
+            Je naozaj tak strašne radikálne tvrdiť, že toto je správne? Pri voľbe medzi smrťou miliónov ľudí a miernym scvrknutím bohatstva zopár superbohatých ľudí, ako by mohol hocikto tvrdiť, že preferuje tú prvú možnosť?
           </div>
         </div>
 
         <div class="infobox text-infobox infobox-half">
-          <h2 class="title what-could-we-do">We cannot accept this level of inequality any longer.</h2>
+          <h2 class="title what-could-we-do">Už viac nemôžeme tolerovať takúto mieru nerovnosti.</h2>
         </div>
 
       </div>
     </div>
   </div>
-  <div class="footer">
-    <div>Updated April 3, 2021. <a target="_blank" href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/README.md">About this page</a></div>
-    <div class="also">Also checkout: <a href="https://mkorostoff.github.io/incarceration-in-real-numbers/" target="_blank">Incarceration in Real Numbers</a></div>
+  <div class="footer" style="visibility: hidden">
+    <div>Updated April 3, 2021. <a target="_blank" href="https://github.com/MKorostoff/1-pixel-wealth/blob/master/README.md">O tejto stránke</a></div>
+    <div class="also">Pozri tiež: <a href="https://mkorostoff.github.io/incarceration-in-real-numbers/" target="_blank">Väzenský systém v reálnych číslach (USA)</a></div>
   </div>
 
 </div>
